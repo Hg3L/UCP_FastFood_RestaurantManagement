@@ -1,0 +1,17 @@
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\BLL.deps.json
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\BLL.dll
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\BLL.pdb
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DTO.dll
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DTO.pdb
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.dll
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\refint\BLL.dll
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.pdb
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\ref\BLL.dll
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DAL.dll
+G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DAL.pdb
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date

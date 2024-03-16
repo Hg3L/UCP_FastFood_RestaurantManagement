@@ -1,0 +1,11 @@
+G:\FastFood_Restaurant_Management_Software\DTO\bin\Debug\net8.0\DTO.deps.json
+G:\FastFood_Restaurant_Management_Software\DTO\bin\Debug\net8.0\DTO.dll
+G:\FastFood_Restaurant_Management_Software\DTO\bin\Debug\net8.0\DTO.pdb
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.dll
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\refint\DTO.dll
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\DTO.pdb
+G:\FastFood_Restaurant_Management_Software\DTO\obj\Debug\net8.0\ref\DTO.dll

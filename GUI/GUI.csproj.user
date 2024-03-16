@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ViewForm\MainFormApp\frmAddNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmAddNewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmAddNewFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmSelling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucChangePasswordSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucDeviceLoginSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucFoodBasket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucFoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\StartFormApp\frmChangingPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\StartFormApp\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\StartFormApp\frmEnteringEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\StartFormApp\frmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\StartFormApp\frmVerifyingOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ViewForm\StartFormApp\ResourceImageForPassword.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewForm\StartFormApp\ResourceImageForVerify.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

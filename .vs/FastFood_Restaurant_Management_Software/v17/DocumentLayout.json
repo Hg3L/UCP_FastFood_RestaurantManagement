@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\FastFood_Restaurant_Management_Software\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|g:\\fastfood_restaurant_management_software\\gui\\viewform\\mainformapp\\frmselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|solutionrelative:gui\\viewform\\mainformapp\\frmselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|G:\\FastFood_Restaurant_Management_Software\\gui\\viewform\\mainformapp\\frmselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|solutionrelative:gui\\viewform\\mainformapp\\frmselling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|G:\\FastFood_Restaurant_Management_Software\\gui\\viewform\\mainformapp\\usercontrols\\ucfoodbasket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|solutionrelative:gui\\viewform\\mainformapp\\usercontrols\\ucfoodbasket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|G:\\FastFood_Restaurant_Management_Software\\gui\\viewform\\mainformapp\\usercontrols\\ucfoodbasket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|solutionrelative:gui\\viewform\\mainformapp\\usercontrols\\ucfoodbasket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|G:\\FastFood_Restaurant_Management_Software\\gui\\viewform\\mainformapp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1409F0F-1732-4F3E-B3FD-152C389A9B8C}|GUI\\GUI.csproj|solutionrelative:gui\\viewform\\mainformapp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FCE72E4-A430-403A-9FA6-B8AF99039D3D}|DAL\\DAL.csproj|G:\\FastFood_Restaurant_Management_Software\\dal\\fooddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FCE72E4-A430-403A-9FA6-B8AF99039D3D}|DAL\\DAL.csproj|solutionrelative:dal\\fooddal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmMain.cs",
+              "RelativeDocumentMoniker": "GUI\\ViewForm\\MainFormApp\\frmMain.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmMain.cs",
+              "RelativeToolTip": "GUI\\ViewForm\\MainFormApp\\frmMain.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T03:48:34.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucFoodBasket.cs",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "RelativeDocumentMoniker": "GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "RelativeToolTip": "GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T16:30:17.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucFoodBasket.cs [Design]",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "RelativeDocumentMoniker": "GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs [Design]",
+              "RelativeToolTip": "GUI\\ViewForm\\MainFormApp\\UserControls\\ucFoodBasket.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T16:27:54.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodDAL.cs",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\DAL\\FoodDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\FoodDAL.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\DAL\\FoodDAL.cs",
+              "RelativeToolTip": "DAL\\FoodDAL.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T12:46:38.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmSelling.cs",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "RelativeDocumentMoniker": "GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "RelativeToolTip": "GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAtwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:48:27.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmSelling.cs [Design]",
+              "DocumentMoniker": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "RelativeDocumentMoniker": "GUI\\ViewForm\\MainFormApp\\frmSelling.cs",
+              "ToolTip": "G:\\FastFood_Restaurant_Management_Software\\GUI\\ViewForm\\MainFormApp\\frmSelling.cs [Design]",
+              "RelativeToolTip": "GUI\\ViewForm\\MainFormApp\\frmSelling.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T08:24:06.326Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
