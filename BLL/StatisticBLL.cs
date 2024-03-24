@@ -78,5 +78,21 @@ namespace BLL
         {
             return StatisticDAL.Instance().GetTopSellingFood(n);
         }
+
+        public int SelectCountCategory()
+        {
+            return StatisticDAL.Instance().GetCountCategory();
+        }
+
+        public int SelectCountFood()
+        {
+            return StatisticDAL.Instance().GetCountFood();
+        }
+
+        public int SelectCountEmployee()
+        {
+            return StatisticDAL.Instance().GetCountEmployee();
+        }
+
     }
 }

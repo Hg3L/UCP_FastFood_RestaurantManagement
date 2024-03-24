@@ -76,6 +76,7 @@ namespace DAL
                 {
                     context.Remove(statistic);
                 }
+                context.SaveChanges();
             }
         }
 
@@ -120,5 +121,45 @@ namespace DAL
             }
         }
 
+        public int GetCountCategory()
+        {
+            using (var context = new DatabaseContext())
+            {
+                int count = context.Category.Count();
+                if (count == null)
+                {
+                    return 0;
+                }
+                return count;
+            }
+        }
+
+        public int GetCountFood()
+        {
+            using (var context = new DatabaseContext())
+            {
+                int count = context.Food.Count();
+                if (count == null)
+                {
+                    return 0;
+                }
+                return count;
+            }
+        }
+
+        public int GetCountEmployee()
+        {
+            using (var context = new DatabaseContext())
+            {
+                int count = context.UserAccount.
+                    Where(p => p.Type_Account == "Nhân viên").
+                    Count();
+                if (count == null)
+                {
+                    return 0;
+                }
+                return count;
+            }
+        }
     }
 }

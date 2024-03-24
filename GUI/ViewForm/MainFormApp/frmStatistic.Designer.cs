@@ -31,13 +31,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStatistic));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.Charts.WinForms.ChartFont chartFont1 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont2 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.ChartFont chartFont3 = new Guna.Charts.WinForms.ChartFont();
@@ -53,19 +52,18 @@
             Guna.Charts.WinForms.ChartFont chartFont7 = new Guna.Charts.WinForms.ChartFont();
             Guna.Charts.WinForms.Tick tick3 = new Guna.Charts.WinForms.Tick();
             Guna.Charts.WinForms.ChartFont chartFont8 = new Guna.Charts.WinForms.ChartFont();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             PieChartTopFood = new LiveCharts.WinForms.PieChart();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             label2 = new Label();
             pictureBox1 = new PictureBox();
             lblIncomeYesterday = new Label();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             label1 = new Label();
             guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             picArrow = new PictureBox();
@@ -86,13 +84,13 @@
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             label12 = new Label();
             pictureBox6 = new PictureBox();
-            label13 = new Label();
+            lblCountEmployee = new Label();
             label10 = new Label();
             pictureBox5 = new PictureBox();
-            label11 = new Label();
+            lblCountFood = new Label();
             label8 = new Label();
             pictureBox4 = new PictureBox();
-            label9 = new Label();
+            lblCountCategory = new Label();
             btnResetStatistic = new Guna.UI2.WinForms.Guna2GradientButton();
             picLock = new PictureBox();
             guna2GradientPanel1.SuspendLayout();
@@ -118,7 +116,7 @@
             PieChartTopFood.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PieChartTopFood.Location = new Point(66, 81);
             PieChartTopFood.Name = "PieChartTopFood";
-            PieChartTopFood.Size = new Size(321, 424);
+            PieChartTopFood.Size = new Size(321, 480);
             PieChartTopFood.TabIndex = 2;
             PieChartTopFood.Text = "pieChart1";
             // 
@@ -172,32 +170,14 @@
             // 
             guna2Panel1.BackColor = Color.White;
             guna2Panel1.BorderColor = Color.DarkOrange;
-            guna2Panel1.Controls.Add(guna2ImageButton1);
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.Controls.Add(PieChartTopFood);
-            guna2Panel1.CustomizableEdges = customizableEdges4;
+            guna2Panel1.CustomizableEdges = customizableEdges3;
             guna2Panel1.Location = new Point(1092, 190);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel1.Size = new Size(443, 585);
             guna2Panel1.TabIndex = 4;
-            // 
-            // guna2ImageButton1
-            // 
-            guna2ImageButton1.CheckedState.ImageSize = new Size(40, 40);
-            guna2ImageButton1.Cursor = Cursors.Hand;
-            guna2ImageButton1.HoverState.Image = (Image)resources.GetObject("resource.Image");
-            guna2ImageButton1.HoverState.ImageSize = new Size(40, 40);
-            guna2ImageButton1.Image = (Image)resources.GetObject("guna2ImageButton1.Image");
-            guna2ImageButton1.ImageOffset = new Point(0, 0);
-            guna2ImageButton1.ImageRotate = 0F;
-            guna2ImageButton1.ImageSize = new Size(40, 40);
-            guna2ImageButton1.Location = new Point(391, 11);
-            guna2ImageButton1.Name = "guna2ImageButton1";
-            guna2ImageButton1.PressedState.ImageSize = new Size(40, 40);
-            guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            guna2ImageButton1.Size = new Size(40, 44);
-            guna2ImageButton1.TabIndex = 4;
             // 
             // label1
             // 
@@ -218,10 +198,10 @@
             guna2GradientPanel2.Controls.Add(label3);
             guna2GradientPanel2.Controls.Add(lblIncomeToday);
             guna2GradientPanel2.Controls.Add(pictureBox2);
-            guna2GradientPanel2.CustomizableEdges = customizableEdges6;
+            guna2GradientPanel2.CustomizableEdges = customizableEdges5;
             guna2GradientPanel2.Location = new Point(473, 81);
             guna2GradientPanel2.Name = "guna2GradientPanel2";
-            guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2GradientPanel2.Size = new Size(455, 103);
             guna2GradientPanel2.TabIndex = 4;
             // 
@@ -274,10 +254,10 @@
             guna2GradientPanel4.Controls.Add(label5);
             guna2GradientPanel4.Controls.Add(pictureBox3);
             guna2GradientPanel4.Controls.Add(lblTotalIncomeAllTime);
-            guna2GradientPanel4.CustomizableEdges = customizableEdges8;
+            guna2GradientPanel4.CustomizableEdges = customizableEdges7;
             guna2GradientPanel4.Location = new Point(934, 81);
             guna2GradientPanel4.Name = "guna2GradientPanel4";
-            guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2GradientPanel4.Size = new Size(601, 103);
             guna2GradientPanel4.TabIndex = 7;
             // 
@@ -319,9 +299,9 @@
             LineChartIncome.Datasets.AddRange(new Guna.Charts.Interfaces.IGunaDataset[] { datasetLineChart });
             chartFont1.FontName = "Arial";
             LineChartIncome.Legend.LabelFont = chartFont1;
-            LineChartIncome.Location = new Point(11, 40);
+            LineChartIncome.Location = new Point(11, 64);
             LineChartIncome.Name = "LineChartIncome";
-            LineChartIncome.Size = new Size(1046, 391);
+            LineChartIncome.Size = new Size(1046, 367);
             LineChartIncome.TabIndex = 8;
             chartFont2.FontName = "Arial";
             chartFont2.Size = 12;
@@ -368,10 +348,10 @@
             guna2GradientPanel3.BorderColor = Color.FromArgb(255, 128, 0);
             guna2GradientPanel3.Controls.Add(label7);
             guna2GradientPanel3.Controls.Add(LineChartIncome);
-            guna2GradientPanel3.CustomizableEdges = customizableEdges10;
+            guna2GradientPanel3.CustomizableEdges = customizableEdges9;
             guna2GradientPanel3.Location = new Point(12, 190);
             guna2GradientPanel3.Name = "guna2GradientPanel3";
-            guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2GradientPanel3.Size = new Size(1074, 434);
             guna2GradientPanel3.TabIndex = 9;
             // 
@@ -395,17 +375,17 @@
             guna2GradientPanel5.Controls.Add(guna2Separator1);
             guna2GradientPanel5.Controls.Add(label12);
             guna2GradientPanel5.Controls.Add(pictureBox6);
-            guna2GradientPanel5.Controls.Add(label13);
+            guna2GradientPanel5.Controls.Add(lblCountEmployee);
             guna2GradientPanel5.Controls.Add(label10);
             guna2GradientPanel5.Controls.Add(pictureBox5);
-            guna2GradientPanel5.Controls.Add(label11);
+            guna2GradientPanel5.Controls.Add(lblCountFood);
             guna2GradientPanel5.Controls.Add(label8);
             guna2GradientPanel5.Controls.Add(pictureBox4);
-            guna2GradientPanel5.Controls.Add(label9);
-            guna2GradientPanel5.CustomizableEdges = customizableEdges12;
+            guna2GradientPanel5.Controls.Add(lblCountCategory);
+            guna2GradientPanel5.CustomizableEdges = customizableEdges11;
             guna2GradientPanel5.Location = new Point(12, 630);
             guna2GradientPanel5.Name = "guna2GradientPanel5";
-            guna2GradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            guna2GradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2GradientPanel5.Size = new Size(1074, 145);
             guna2GradientPanel5.TabIndex = 10;
             // 
@@ -451,16 +431,16 @@
             pictureBox6.TabIndex = 9;
             pictureBox6.TabStop = false;
             // 
-            // label13
+            // lblCountEmployee
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
-            label13.ForeColor = Color.FromArgb(75, 88, 119);
-            label13.Location = new Point(833, 65);
-            label13.Name = "label13";
-            label13.Size = new Size(35, 41);
-            label13.TabIndex = 11;
-            label13.Text = "3";
+            lblCountEmployee.AutoSize = true;
+            lblCountEmployee.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
+            lblCountEmployee.ForeColor = Color.FromArgb(75, 88, 119);
+            lblCountEmployee.Location = new Point(833, 65);
+            lblCountEmployee.Name = "lblCountEmployee";
+            lblCountEmployee.Size = new Size(35, 41);
+            lblCountEmployee.TabIndex = 11;
+            lblCountEmployee.Text = "3";
             // 
             // label10
             // 
@@ -483,16 +463,16 @@
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
             // 
-            // label11
+            // lblCountFood
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
-            label11.ForeColor = Color.FromArgb(75, 88, 119);
-            label11.Location = new Point(461, 65);
-            label11.Name = "label11";
-            label11.Size = new Size(35, 41);
-            label11.TabIndex = 8;
-            label11.Text = "3";
+            lblCountFood.AutoSize = true;
+            lblCountFood.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
+            lblCountFood.ForeColor = Color.FromArgb(75, 88, 119);
+            lblCountFood.Location = new Point(461, 65);
+            lblCountFood.Name = "lblCountFood";
+            lblCountFood.Size = new Size(35, 41);
+            lblCountFood.TabIndex = 8;
+            lblCountFood.Text = "3";
             // 
             // label8
             // 
@@ -515,23 +495,23 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
-            // label9
+            // lblCountCategory
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
-            label9.ForeColor = Color.FromArgb(75, 88, 119);
-            label9.Location = new Point(97, 65);
-            label9.Name = "label9";
-            label9.Size = new Size(35, 41);
-            label9.TabIndex = 5;
-            label9.Text = "3";
+            lblCountCategory.AutoSize = true;
+            lblCountCategory.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
+            lblCountCategory.ForeColor = Color.FromArgb(75, 88, 119);
+            lblCountCategory.Location = new Point(97, 65);
+            lblCountCategory.Name = "lblCountCategory";
+            lblCountCategory.Size = new Size(35, 41);
+            lblCountCategory.TabIndex = 5;
+            lblCountCategory.Text = "3";
             // 
             // btnResetStatistic
             // 
             btnResetStatistic.BorderColor = Color.DarkOrange;
             btnResetStatistic.BorderThickness = 2;
             btnResetStatistic.Cursor = Cursors.Hand;
-            btnResetStatistic.CustomizableEdges = customizableEdges14;
+            btnResetStatistic.CustomizableEdges = customizableEdges13;
             btnResetStatistic.DisabledState.BorderColor = Color.DarkGray;
             btnResetStatistic.DisabledState.CustomBorderColor = Color.DarkGray;
             btnResetStatistic.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -544,9 +524,9 @@
             btnResetStatistic.Image = (Image)resources.GetObject("btnResetStatistic.Image");
             btnResetStatistic.ImageAlign = HorizontalAlignment.Left;
             btnResetStatistic.ImageSize = new Size(30, 30);
-            btnResetStatistic.Location = new Point(1324, 12);
+            btnResetStatistic.Location = new Point(1312, 12);
             btnResetStatistic.Name = "btnResetStatistic";
-            btnResetStatistic.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            btnResetStatistic.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnResetStatistic.Size = new Size(187, 56);
             btnResetStatistic.TabIndex = 11;
             btnResetStatistic.Text = "Thống kê lại";
@@ -558,7 +538,7 @@
             picLock.BackColor = Color.White;
             picLock.Cursor = Cursors.Hand;
             picLock.Image = (Image)resources.GetObject("picLock.Image");
-            picLock.Location = new Point(1329, 20);
+            picLock.Location = new Point(1317, 19);
             picLock.Name = "picLock";
             picLock.Size = new Size(43, 41);
             picLock.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -624,7 +604,6 @@
         private Label label5;
         private PictureBox pictureBox3;
         private Label lblTotalIncomeAllTime;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.Charts.WinForms.GunaChart LineChartIncome;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private Guna.Charts.WinForms.GunaLineDataset datasetLineChart;
@@ -633,15 +612,15 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
         private Label label8;
         private PictureBox pictureBox4;
-        private Label label9;
+        private Label lblCountCategory;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Label label12;
         private PictureBox pictureBox6;
-        private Label label13;
+        private Label lblCountEmployee;
         private Label label10;
         private PictureBox pictureBox5;
-        private Label label11;
+        private Label lblCountFood;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Guna.UI2.WinForms.Guna2GradientButton btnResetStatistic;
         private PictureBox picLock;

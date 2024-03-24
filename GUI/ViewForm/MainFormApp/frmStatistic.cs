@@ -43,8 +43,9 @@ namespace GUI.ViewForm.MainFormApp
             LoadTotalIncome();
             LoadDictionaryIncomeList();
             LoadDictionaryTopSellingList();
-            LoadPie();
+            LoadPieChart();
             LoadLineChart();
+            LoadCountInAbovePanel();
         }
 
         private void LoadDictionaryIncomeList()
@@ -126,8 +127,17 @@ namespace GUI.ViewForm.MainFormApp
             }
         }
 
+        private void LoadCountInAbovePanel()
+        {
+            lblCountCategory.Text = StatisticBLL.Instance().SelectCountCategory().ToString();
+            lblCountFood.Text = StatisticBLL.Instance().SelectCountFood().ToString();
+            lblCountEmployee.Text = StatisticBLL.Instance().SelectCountEmployee().ToString();
+        }
+
         private void LoadLineChart()
         {
+            // Xóa tất cả dữ liệu cũ trên LineChart
+            datasetLineChart.DataPoints.Clear();
             string month_name;
             foreach (var entry in MapIncomeWithMonth)
             {
@@ -137,7 +147,7 @@ namespace GUI.ViewForm.MainFormApp
             LineChartIncome.Update();
         }
 
-        private void LoadPie()
+        private void LoadPieChart()
         {
             SeriesCollection s = new SeriesCollection();
 
@@ -169,6 +179,7 @@ namespace GUI.ViewForm.MainFormApp
             lblTotalIncomeAllTime.Text = "0 đ";
             MapIncomeWithMonth.Clear();
             LoadDictionaryIncomeList();
+            LoadLineChart();
         }
 
         private void btnResetStatistic_Click(object sender, EventArgs e)
