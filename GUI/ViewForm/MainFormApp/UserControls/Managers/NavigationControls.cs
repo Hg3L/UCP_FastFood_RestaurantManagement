@@ -8,7 +8,7 @@ namespace GUI.ViewForm.MainFormApp.UserControls.Managers
 {
     public class NavigationControls
     {
-        // Danh sách chứa các User Control
+        // Danh sách chứa các User Control trong phần Setting
         List<UserControl> userControlList = new List<UserControl>();
 
         Panel panel;
@@ -24,9 +24,7 @@ namespace GUI.ViewForm.MainFormApp.UserControls.Managers
         {
             for (int i = 0; i < userControlList.Count; i++)
             {
-                // Chế độ Dock của mỗi User Controll sẽ là Fill ở trong panel
                 userControlList[i].Dock = DockStyle.Fill;
-                // Thêm tất cả User Controll vào trong panel
                 panel.Controls.Add(userControlList[i]);
             }
         }

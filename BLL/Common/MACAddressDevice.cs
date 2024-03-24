@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
+﻿using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL.Common
 {
@@ -22,7 +18,6 @@ namespace BLL.Common
                 // Kiểm tra nếu card mạng là loại Ethernet
                 if (nic.NetworkInterfaceType == NetworkInterfaceType.Ethernet)
                 {
-                    // Lấy địa chỉ MAC của card mạng và thêm vào chuỗi kết quả
                     macAddresses.Append(nic.GetPhysicalAddress().ToString());
                 }
             }

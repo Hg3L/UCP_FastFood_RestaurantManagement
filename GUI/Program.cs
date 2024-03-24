@@ -1,5 +1,6 @@
 using DTO;
 using GUI.ViewForm;
+using GUI.ViewForm.MainFormApp;
 
 namespace GUI
 {
@@ -19,8 +20,10 @@ namespace GUI
             x.Name_Account = "Developer";
             //x.Type_Account = "Nhân viên";
             x.Type_Account = "Admin";
-            Application.Run(new frmMain(x));
-            //Application.Run(new frmStart());
+
+            //Application.Run(new frmMain(x));
+            Application.Run(new frmStart());
+            //Application.Run(new frmStatistic());
         }
     }
 }

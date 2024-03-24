@@ -15,3 +15,4 @@ G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\ref\BLL.dll
 G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DAL.dll
 G:\FastFood_Restaurant_Management_Software\BLL\bin\Debug\net8.0\DAL.pdb
 G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+G:\FastFood_Restaurant_Management_Software\BLL\obj\Debug\net8.0\BLL.sourcelink.json

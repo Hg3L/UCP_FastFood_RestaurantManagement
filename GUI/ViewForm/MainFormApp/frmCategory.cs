@@ -12,7 +12,6 @@ namespace GUI.ViewForm.MainFormApp
             this._AddCategoryForm = _AddCategoryForm;
         }
 
-        // Lấy dữ liệu từ database
         private async void LoadCategory()
         {
             var data = await Task.Run(() => CategoryBLL.Instance().SelectIdAndCategoryName());
@@ -51,8 +50,6 @@ namespace GUI.ViewForm.MainFormApp
                     int id_category = (int)dgvListTypeFood.CurrentRow.Cells["IDTypeFood_col"].Value;
                     CategoryBLL.Instance().DeleteCategory(id_category);
                     LoadCategory();
-                    MessageBox.Show("Xóa danh mục thành công", "THÔNG BÁO",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

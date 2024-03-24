@@ -24,12 +24,10 @@ namespace BLL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new AccountBLL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 
@@ -50,20 +48,17 @@ namespace BLL
             AccountDAL.Instance().AddNewRememberAccountLogin(model);
         }
 
-        // Phương thức xác nhận đăng nhập hợp lệ
         public UserAccount IsSuccessfulLogin(string typeAccount, string email, string password)
         {
             var model = new UserAccount(email, password, typeAccount);
-            // Đặt tên giả cho tài khoản để tránh bị catch do annotation là required
+            // Đặt tên giả cho tài khoản đăng nhập để tránh bị catch do annotation là required
             // Name_Account sẽ không cần dùng đến khi kiểm tra
-            // Name_Account sẽ được dùng khi tạo 1 tài khoản mới
             model.Name_Account = "!";
             try
             {
-                // Kiểm tra dữ liệu của một đối tượng, nếu có ngoại lệ thì catch sẽ bắt
                 DataValidation.Instance().ValidateData(model);
-
                 var account = AccountDAL.Instance().Login(model);
+
                 if (account == null)
                 {
                     HelperElement.Message = "Tài khoản/Mật khẩu không chính xác!";
@@ -81,8 +76,6 @@ namespace BLL
             }
         }
 
-        // Phương thức kiểm tra mật khẩu mới
-        // Không chứa khoảng trắng, và có độ dài từ 3 đến 16 ký tự
         public bool IsValidNewPassword(string password)
         {
             if(string.IsNullOrWhiteSpace(password)
@@ -95,7 +88,6 @@ namespace BLL
             return true;
         }
 
-        // Phương thức kiểm tra xác nhận mật khẩu mới
         public bool IsValidConfirmNewPassword(string password, string confirmPassword)
         {
             return !string.IsNullOrWhiteSpace(password)
@@ -103,13 +95,11 @@ namespace BLL
                     && password.Equals(confirmPassword);
         }
 
-        // Phương thức đổi mật khẩu
         public void ChangePassword(string email,string password)
         {
             AccountDAL.Instance().ChangePassword(email, password);
         }
 
-        // Phương thức xóa ghi nhớ đăng nhập trên tất cả thiết bị
         public void DeleteAllDevicesLogin(UserAccount account)
         {
             AccountDAL.Instance().RemoveAccountFromAllDevices(account);

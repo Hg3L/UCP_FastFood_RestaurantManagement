@@ -10,7 +10,7 @@ namespace GUI.ViewForm.MainFormApp
 
         private int _id_food;
 
-        private int _idAddedFood;
+        private int _idAddedFood; // ID món mới được thêm
 
         private bool IsSuccessfulAddingFood;
 
@@ -69,7 +69,6 @@ namespace GUI.ViewForm.MainFormApp
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     Image_Location = dialog.FileName;
-
                     picImageFood.ImageLocation = Image_Location;
                 }
             }
@@ -93,7 +92,7 @@ namespace GUI.ViewForm.MainFormApp
                     txtFoodSize.Enabled = true;
                     txtPrice.Enabled = true;
 
-                    // Truyền lại id món vừa được thêm ở cơ sở dữ liệu để tiến hành thêm kích thước và giá
+                    // Truyền lại id món vừa được thêm ở cơ sở dữ liệu để thêm kích thước và giá
                     _idAddedFood = model.Id_Food;
                     MessageBox.Show("Thêm món ăn thành công \nHãy thêm kích thước và giá món tùy theo kích thước",
                         "THÔNG BÁO",
@@ -190,8 +189,6 @@ namespace GUI.ViewForm.MainFormApp
 
                     FoodBLL.Instance().DeleteFoodSize(id_size);
                     LoadFoodSize(_idAddedFood);
-                    MessageBox.Show("Xóa danh mục thành công", "THÔNG BÁO",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

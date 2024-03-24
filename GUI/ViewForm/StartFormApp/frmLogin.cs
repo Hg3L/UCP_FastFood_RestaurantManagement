@@ -10,14 +10,12 @@ namespace GUI.ViewForm
     {
         private Form ActiveForm = null;
 
-        // Sự kiện thông báo cho Form Start biết đăng nhập thành công
+        // Sự kiện thông báo cho frmStart biết là đã đăng nhập thành công
         public event EventHandler OnLoginCompleted;
 
         // Danh sách tài khoản đã được lưu trên thiết bị
-        private List<UserAccount> ListSavedAccount;
+        private List<UserAccount> ListSavedAccount;  
 
-        // Đếm số lần ấn vào iconright tại textbox
-        // Nếu là số lẻ thì hiện mật khẩu, ngược lại sẽ ẩn
         private int count = 0;
 
         private string _macAddress;
@@ -28,7 +26,6 @@ namespace GUI.ViewForm
             AddTypeAccountToComboBox();
             ShowSavedAccountOnDevice();
 
-            // Thiết lập trạng thái vùng nhập mật khẩu
             txtPassword.UseSystemPasswordChar = true;
             txtPassword.PasswordChar = '●';
         }
@@ -50,7 +47,7 @@ namespace GUI.ViewForm
                     txtEmail.Text = ListSavedAccount[0].Email_Account;
                     txtPassword.Text = ListSavedAccount[0].Password_Account;
                 }
-                // Tạo một AutoCompleteStringCollection và thêm email vào đó
+                // Tạo một AutoCompleteStringCollection và thêm email 
                 AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
                 foreach (var account in ListSavedAccount)
                 {
@@ -202,10 +199,7 @@ namespace GUI.ViewForm
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (txtEmail.AutoCompleteCustomSource.Contains(txtEmail.Text))
-                {
-                    PerformLogin();
-                }
+                PerformLogin();
             }
         }
         #endregion

@@ -5,13 +5,17 @@ namespace DAL.Context
 {
     public class DatabaseContext : DbContext
     {
-        // DbSet để tương tác với bảng Account trong cơ sở dữ liệu.
+        // DbSet để tương tác với các bảng trong cơ sở dữ liệu.
         public DbSet<UserAccount> UserAccount { get; set; }
         public DbSet<DeviceAccount> DeviceAccount { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Food> Food { get; set; }
         public DbSet<FoodSize> FoodSize { get; set; }
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<Voucher> Voucher { get; set; }
+        public DbSet<Bill> Bill { get; set; }
+        public DbSet<FoodOrder> FoodOrder { get; set; }
+        public DbSet<Statistic> Statistic { get; set; }
 
         // Chuỗi kết nối để kết nối đến cơ sở dữ liệu, lấy từ cấu hình.
         private string ConnectionString = @"Data Source=HOANGLAM;

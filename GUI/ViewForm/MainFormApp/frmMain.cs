@@ -1,5 +1,6 @@
 ﻿using DTO;
 using GUI.ViewForm.MainFormApp;
+using GUI.ViewForm.MainFormApp.UserControls;
 using Guna.UI2.WinForms;
 
 namespace GUI.ViewForm
@@ -8,22 +9,17 @@ namespace GUI.ViewForm
     {
         private Form ActiveForm = null;
 
-        // Thuộc tính kiểm tra side bar có đang mở rộng
-        private bool IsSideBarExpand = true;
-
-        // Thuộc tính kiểm tra side bar có đang mở rộng
         private bool IsShowLogout = false;
 
-        // Thuộc tính kiểm tra loaị tài khoản
         private bool IsValidTypeAccount;
 
         private Panel LeftBorderButton;
 
         private Guna2Button currentButton;
 
-        private UserAccount _account;
+        public static UserAccount _account { get; set; }
 
-        // Màu của LeftBorderButton ấn nút
+        // Màu của LeftBorderButton khi ấn nút
         private Color _color = Color.FromArgb(149, 59, 174);
 
         public frmMain(UserAccount account)
@@ -42,17 +38,6 @@ namespace GUI.ViewForm
             OpenChildForm(new frmSelling());
         }
 
-        #region Các phương thức hỗ trợ
-        // Phương thức khởi tạo viền của nút khi ấn vào
-        private void CreateLeftBorderButton()
-        {
-            LeftBorderButton = new Panel();
-            LeftBorderButton.Size = new Size(9, 71);
-            LeftBorderButton.Anchor = AnchorStyles.Left;
-            panelSideBar.Controls.Add(LeftBorderButton);
-            LeftBorderButton.Visible = false;
-        }
-
         // Phương thức mở 1 form trên panel
         private void OpenChildForm(Form childform)
         {
@@ -69,16 +54,54 @@ namespace GUI.ViewForm
             childform.Show();
         }
 
+        #region Hỗ trợ tạo viền bên trái khi ấn nút
+        // Phương thức khởi tạo viền của nút khi ấn vào
+        private void CreateLeftBorderButton()
+        {
+            LeftBorderButton = new Panel();
+            LeftBorderButton.Size = new Size(9, 71);
+            LeftBorderButton.Anchor = AnchorStyles.Left;
+            panelSideBar.Controls.Add(LeftBorderButton);
+            LeftBorderButton.Visible = false;
+        }
+
+        // Phương thức xử lý View khi người dùng ấn nút
+        private void ActiveButton(object sender, Color color)
+        {
+            if (sender != null)
+            {
+                DisableButton();
+                currentButton = (Guna2Button)sender;
+                currentButton.BackColor = Color.FromArgb(216, 68, 108);
+
+                // Thêm viền khi nút được ấn
+                LeftBorderButton.BackColor = color;
+                LeftBorderButton.Location = new Point(0, currentButton.Location.Y);
+                LeftBorderButton.Visible = true;
+                LeftBorderButton.BringToFront();
+            }
+        }
+
+        // Phương thức xử lý View khi người dùng ấn nút
+        private void DisableButton()
+        {
+            if (currentButton != null)
+            {
+                currentButton.BackColor = Color.Transparent;
+            }
+        }
+        #endregion
+
         // Phương thức hiện thị thông tin tài khoản
         private void ShowUserInformation()
         {
             int lastSpaceIndex = _account.Name_Account.LastIndexOf(' ');
 
-            if (lastSpaceIndex != -1) // Nếu tìm thấy khoảng trắng trong chuỗi
+            if (lastSpaceIndex != -1) 
             {
                 lblNameAccount.Text = _account.Name_Account.Substring(lastSpaceIndex + 1);
             }
-            else // Nếu không có khoảng trắng nào, tức là chuỗi chỉ có một từ
+            else 
             {
                 lblNameAccount.Text = _account.Name_Account;
             }
@@ -113,64 +136,7 @@ namespace GUI.ViewForm
             }
         }
 
-        // Phương thức xử lý View khi người dùng ấn nút
-        private void ActiveButton(object sender, Color color)
-        {
-            if (sender != null)
-            {
-                DisableButton();
-                currentButton = (Guna2Button)sender;
-                currentButton.BackColor = Color.FromArgb(216, 68, 108);
-
-                // Thêm viền khi nút được ấn
-                LeftBorderButton.BackColor = color;
-                LeftBorderButton.Location = new Point(0, currentButton.Location.Y);
-                LeftBorderButton.Visible = true;
-                LeftBorderButton.BringToFront();
-            }
-        }
-
-        // Phương thức xử lý View khi người dùng ấn nút
-        private void DisableButton()
-        {
-            if (currentButton != null)
-            {
-                currentButton.BackColor = Color.Transparent;
-            }
-        }
-        #endregion
-
-        #region Sự kiện người dùng trên Form
-        private void tmrShowAndHideBar_Tick(object sender, EventArgs e)
-        {
-            if (IsSideBarExpand)
-            {
-                // Nếu side bar đang mở, giảm đến min
-                panelSideBar.Width -= 10;
-                if (panelSideBar.Width <= panelSideBar.MinimumSize.Width)
-                {
-                    IsSideBarExpand = false;
-                    picLogo.Visible = false;
-                    tmrShowAndHideBar.Stop();
-                }
-            }
-            else
-            {
-                picLogo.Visible = true;
-                panelSideBar.Width += 10;
-                if (panelSideBar.Width >= panelSideBar.MaximumSize.Width)
-                {
-                    IsSideBarExpand = true;
-                    tmrShowAndHideBar.Stop();
-                }
-            }
-        }
-
-        private void btnShowHideBar_Click(object sender, EventArgs e)
-        {
-            tmrShowAndHideBar.Start();
-        }
-
+        #region Đóng và mở phần tài khoản
         private void tmrShowSubButton_Tick(object sender, EventArgs e)
         {
             if (IsShowLogout)
@@ -194,15 +160,16 @@ namespace GUI.ViewForm
                 }
             }
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        #endregion
 
         private void btnDrop_Click(object sender, EventArgs e)
         {
             tmrShowSubButton.Start();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -224,12 +191,11 @@ namespace GUI.ViewForm
             ActiveButton(sender, Color.White);
             LeftBorderButton.Visible = false;
 
-            panelChild.Size = new Size(1547, 780);
-            panelChild.Location = new Point(275, 190);
+            panelChild.Size = new Size(1547, 790);
+            panelChild.Location = new Point(275, 180);
             OpenChildForm(new frmSetting(_account));
         }
 
-        // Các nút ấn bên Side bar
         private void btnStaff_Click(object sender, EventArgs e)
         {
             if (!IsValidTypeAccount)
@@ -242,8 +208,8 @@ namespace GUI.ViewForm
             else
             {
                 ActiveButton(sender, _color);
-                panelChild.Size = new Size(1547, 780);
-                panelChild.Location = new Point(275, 190);
+                panelChild.Size = new Size(1547, 790);
+                panelChild.Location = new Point(275, 180);
                 OpenChildForm(new frmEmployee());
             }
         }
@@ -251,16 +217,16 @@ namespace GUI.ViewForm
         private void btnListTypeFood_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, _color);
-            panelChild.Size = new Size(1547, 780);
-            panelChild.Location = new Point(275, 190);
+            panelChild.Size = new Size(1547, 790);
+            panelChild.Location = new Point(275, 180);
             OpenChildForm(new frmCategory(new frmAddNewCategory()));
         }
 
         private void btnFood_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, _color);
-            panelChild.Size = new Size(1547, 780);
-            panelChild.Location = new Point(275, 190);
+            panelChild.Size = new Size(1547, 790);
+            panelChild.Location = new Point(275, 180);
             OpenChildForm(new frmFood());
         }
 
@@ -275,17 +241,17 @@ namespace GUI.ViewForm
         private void btnBill_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, _color);
-            panelChild.Size = new Size(1547, 780);
-            panelChild.Location = new Point(275, 190);
+            panelChild.Size = new Size(1547, 790);
+            panelChild.Location = new Point(275, 180);
+            OpenChildForm(new frmBill());
         }
 
         private void btnStatistic_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, _color);
-            panelChild.Size = new Size(1547, 780);
-            panelChild.Location = new Point(275, 190);
+            panelChild.Size = new Size(1547, 790);
+            panelChild.Location = new Point(275, 180);
+            OpenChildForm(new frmStatistic());
         }
-
-        #endregion
     }
 }

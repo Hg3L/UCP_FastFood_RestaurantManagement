@@ -13,3 +13,4 @@ G:\FastFood_Restaurant_Management_Software\DAL\obj\Debug\net8.0\refint\DAL.dll
 G:\FastFood_Restaurant_Management_Software\DAL\obj\Debug\net8.0\DAL.pdb
 G:\FastFood_Restaurant_Management_Software\DAL\obj\Debug\net8.0\ref\DAL.dll
 G:\FastFood_Restaurant_Management_Software\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+G:\FastFood_Restaurant_Management_Software\DAL\obj\Debug\net8.0\DAL.sourcelink.json

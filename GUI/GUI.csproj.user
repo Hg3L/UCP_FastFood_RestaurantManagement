@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="ViewForm\MainFormApp\frmViewBillDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ViewForm\MainFormApp\frmAddNewEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -8,6 +11,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewForm\MainFormApp\frmAddNewFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmAddVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmBill.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ViewForm\MainFormApp\frmFood.cs">
@@ -24,6 +33,15 @@
     </Compile>
     <Compile Update="ViewForm\MainFormApp\frmSetting.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\frmStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\UserControls\ucCategoryCard.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ViewForm\MainFormApp\UserControls\ucChangePasswordSetting.cs">
       <SubType>UserControl</SubType>

@@ -1,5 +1,4 @@
-﻿
-namespace GUI.ViewForm
+﻿namespace GUI.ViewForm
 {
     public partial class frmStart : Form
     {
@@ -28,7 +27,7 @@ namespace GUI.ViewForm
             childform.BringToFront();
             childform.Show();
 
-            // Kiểm tra nếu form là frmLogin thì đăng ký sự kiện từ nút Login của nó
+            // Đăng nhập thành công thì ẩn frmStart và đóng frmLogin
             if (childform is frmLogin loginForm)
             {
                 loginForm.OnLoginCompleted += HandleLoginCompleted;

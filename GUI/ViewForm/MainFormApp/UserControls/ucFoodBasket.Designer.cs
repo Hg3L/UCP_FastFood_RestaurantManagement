@@ -28,71 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucFoodBasket));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            panelCount = new Guna.UI2.WinForms.Guna2Panel();
             lblNumber = new Label();
             btnPlusNumber = new Guna.UI2.WinForms.Guna2Button();
             btnMinusNumber = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            txtPrice = new Label();
+            picFood = new Guna.UI2.WinForms.Guna2PictureBox();
             lblFoodSize = new Label();
-            label1 = new Label();
-            txtFoodName = new Label();
+            lblNumberX = new Label();
+            lblFoodName = new Label();
             btnRemove = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            lblFoodPrice = new Label();
             guna2Panel1.SuspendLayout();
-            guna2Panel3.SuspendLayout();
+            panelCount.SuspendLayout();
             guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picFood).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel1
             // 
             guna2Panel1.BorderColor = Color.FromArgb(255, 128, 0);
             guna2Panel1.BorderThickness = 3;
-            guna2Panel1.Controls.Add(guna2Panel3);
+            guna2Panel1.Controls.Add(panelCount);
             guna2Panel1.Controls.Add(btnPlusNumber);
             guna2Panel1.Controls.Add(btnMinusNumber);
             guna2Panel1.Controls.Add(guna2Panel2);
-            guna2Panel1.Controls.Add(txtPrice);
             guna2Panel1.Controls.Add(lblFoodSize);
-            guna2Panel1.Controls.Add(label1);
-            guna2Panel1.Controls.Add(txtFoodName);
+            guna2Panel1.Controls.Add(lblNumberX);
+            guna2Panel1.Controls.Add(lblFoodName);
             guna2Panel1.Controls.Add(btnRemove);
-            guna2Panel1.CustomizableEdges = customizableEdges13;
+            guna2Panel1.Controls.Add(lblFoodPrice);
+            guna2Panel1.CustomizableEdges = customizableEdges27;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel1.Size = new Size(519, 118);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2Panel1.Size = new Size(546, 118);
             guna2Panel1.TabIndex = 0;
             // 
-            // guna2Panel3
+            // panelCount
             // 
-            guna2Panel3.BorderColor = Color.LightSalmon;
-            guna2Panel3.BorderThickness = 3;
-            guna2Panel3.Controls.Add(lblNumber);
-            guna2Panel3.CustomizableEdges = customizableEdges1;
-            guna2Panel3.Location = new Point(359, 68);
-            guna2Panel3.Name = "guna2Panel3";
-            guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel3.Size = new Size(45, 38);
-            guna2Panel3.TabIndex = 11;
+            panelCount.BorderColor = Color.LightSalmon;
+            panelCount.BorderThickness = 3;
+            panelCount.Controls.Add(lblNumber);
+            panelCount.CustomizableEdges = customizableEdges15;
+            panelCount.Location = new Point(397, 68);
+            panelCount.Name = "panelCount";
+            panelCount.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            panelCount.Size = new Size(45, 38);
+            panelCount.TabIndex = 11;
             // 
             // lblNumber
             // 
@@ -113,9 +113,9 @@
             btnPlusNumber.BorderRadius = 8;
             btnPlusNumber.BorderThickness = 2;
             btnPlusNumber.Cursor = Cursors.Hand;
-            customizableEdges3.BottomLeft = false;
-            customizableEdges3.TopLeft = false;
-            btnPlusNumber.CustomizableEdges = customizableEdges3;
+            customizableEdges17.BottomLeft = false;
+            customizableEdges17.TopLeft = false;
+            btnPlusNumber.CustomizableEdges = customizableEdges17;
             btnPlusNumber.DisabledState.BorderColor = Color.DarkGray;
             btnPlusNumber.DisabledState.CustomBorderColor = Color.DarkGray;
             btnPlusNumber.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -124,9 +124,9 @@
             btnPlusNumber.Font = new Font("Segoe UI", 9F);
             btnPlusNumber.ForeColor = Color.White;
             btnPlusNumber.Image = (Image)resources.GetObject("btnPlusNumber.Image");
-            btnPlusNumber.Location = new Point(401, 68);
+            btnPlusNumber.Location = new Point(439, 68);
             btnPlusNumber.Name = "btnPlusNumber";
-            btnPlusNumber.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnPlusNumber.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnPlusNumber.Size = new Size(45, 38);
             btnPlusNumber.TabIndex = 10;
             btnPlusNumber.Click += btnPlusNumber_Click;
@@ -138,9 +138,9 @@
             btnMinusNumber.BorderRadius = 8;
             btnMinusNumber.BorderThickness = 2;
             btnMinusNumber.Cursor = Cursors.Hand;
-            customizableEdges5.BottomRight = false;
-            customizableEdges5.TopRight = false;
-            btnMinusNumber.CustomizableEdges = customizableEdges5;
+            customizableEdges19.BottomRight = false;
+            customizableEdges19.TopRight = false;
+            btnMinusNumber.CustomizableEdges = customizableEdges19;
             btnMinusNumber.DisabledState.BorderColor = Color.DarkGray;
             btnMinusNumber.DisabledState.CustomBorderColor = Color.DarkGray;
             btnMinusNumber.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -149,9 +149,9 @@
             btnMinusNumber.Font = new Font("Segoe UI", 9F);
             btnMinusNumber.ForeColor = Color.White;
             btnMinusNumber.Image = (Image)resources.GetObject("btnMinusNumber.Image");
-            btnMinusNumber.Location = new Point(317, 68);
+            btnMinusNumber.Location = new Point(355, 68);
             btnMinusNumber.Name = "btnMinusNumber";
-            btnMinusNumber.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnMinusNumber.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnMinusNumber.Size = new Size(45, 38);
             btnMinusNumber.TabIndex = 9;
             btnMinusNumber.Click += btnMinusNumber_Click;
@@ -161,59 +161,66 @@
             guna2Panel2.BorderColor = Color.FromArgb(255, 128, 0);
             guna2Panel2.BorderRadius = 12;
             guna2Panel2.BorderThickness = 2;
-            guna2Panel2.Controls.Add(guna2PictureBox1);
-            guna2Panel2.CustomizableEdges = customizableEdges9;
+            guna2Panel2.Controls.Add(picFood);
+            guna2Panel2.CustomizableEdges = customizableEdges23;
             guna2Panel2.Location = new Point(8, 10);
             guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Panel2.Size = new Size(112, 99);
             guna2Panel2.TabIndex = 8;
             // 
-            // txtPrice
+            // picFood
             // 
-            txtPrice.AutoSize = true;
-            txtPrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            txtPrice.ForeColor = Color.FromArgb(255, 128, 0);
-            txtPrice.Location = new Point(328, 27);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(119, 31);
-            txtPrice.TabIndex = 7;
-            txtPrice.Text = "100,000 đ";
+            picFood.BackColor = Color.Transparent;
+            picFood.BorderRadius = 12;
+            picFood.CustomizableEdges = customizableEdges21;
+            picFood.FillColor = Color.Transparent;
+            picFood.Image = (Image)resources.GetObject("picFood.Image");
+            picFood.ImageRotate = 0F;
+            picFood.Location = new Point(3, 3);
+            picFood.Name = "picFood";
+            picFood.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            picFood.Size = new Size(106, 93);
+            picFood.SizeMode = PictureBoxSizeMode.StretchImage;
+            picFood.TabIndex = 0;
+            picFood.TabStop = false;
             // 
             // lblFoodSize
             // 
             lblFoodSize.AutoSize = true;
             lblFoodSize.Font = new Font("Segoe UI", 12F);
-            lblFoodSize.Location = new Point(161, 68);
+            lblFoodSize.ForeColor = Color.FromArgb(255, 128, 0);
+            lblFoodSize.Location = new Point(157, 68);
             lblFoodSize.Name = "lblFoodSize";
             lblFoodSize.Size = new Size(69, 28);
             lblFoodSize.TabIndex = 6;
             lblFoodSize.Text = "Cỡ lớn";
             // 
-            // label1
+            // lblNumberX
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(129, 68);
-            label1.Name = "label1";
-            label1.Size = new Size(32, 28);
-            label1.TabIndex = 5;
-            label1.Text = "x1";
+            lblNumberX.AutoSize = true;
+            lblNumberX.Font = new Font("Segoe UI", 12F);
+            lblNumberX.Location = new Point(125, 68);
+            lblNumberX.Name = "lblNumberX";
+            lblNumberX.Size = new Size(32, 28);
+            lblNumberX.TabIndex = 5;
+            lblNumberX.Text = "x1";
             // 
-            // txtFoodName
+            // lblFoodName
             // 
-            txtFoodName.AutoSize = true;
-            txtFoodName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtFoodName.Location = new Point(126, 27);
-            txtFoodName.Name = "txtFoodName";
-            txtFoodName.Size = new Size(149, 31);
-            txtFoodName.TabIndex = 4;
-            txtFoodName.Text = "Pizza Hawaii";
+            lblFoodName.AutoSize = true;
+            lblFoodName.BackColor = Color.Transparent;
+            lblFoodName.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFoodName.Location = new Point(120, 27);
+            lblFoodName.Name = "lblFoodName";
+            lblFoodName.Size = new Size(149, 31);
+            lblFoodName.TabIndex = 4;
+            lblFoodName.Text = "Pizza Hawaii";
             // 
             // btnRemove
             // 
             btnRemove.Cursor = Cursors.Hand;
-            btnRemove.CustomizableEdges = customizableEdges11;
+            btnRemove.CustomizableEdges = customizableEdges25;
             btnRemove.DisabledState.BorderColor = Color.DarkGray;
             btnRemove.DisabledState.CustomBorderColor = Color.DarkGray;
             btnRemove.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -225,29 +232,25 @@
             btnRemove.Font = new Font("Segoe UI", 9F);
             btnRemove.ForeColor = Color.White;
             btnRemove.Image = (Image)resources.GetObject("btnRemove.Image");
-            btnRemove.ImageSize = new Size(40, 40);
-            btnRemove.Location = new Point(453, 0);
+            btnRemove.ImageSize = new Size(34, 34);
+            btnRemove.Location = new Point(498, 0);
             btnRemove.Name = "btnRemove";
-            btnRemove.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnRemove.Size = new Size(66, 118);
+            btnRemove.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnRemove.Size = new Size(48, 118);
             btnRemove.TabIndex = 1;
             btnRemove.Click += btnRemove_Click;
             // 
-            // guna2PictureBox1
+            // lblFoodPrice
             // 
-            guna2PictureBox1.BackColor = Color.Transparent;
-            guna2PictureBox1.BorderRadius = 12;
-            guna2PictureBox1.CustomizableEdges = customizableEdges7;
-            guna2PictureBox1.FillColor = Color.Transparent;
-            guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
-            guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(3, 3);
-            guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2PictureBox1.Size = new Size(106, 93);
-            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            guna2PictureBox1.TabIndex = 0;
-            guna2PictureBox1.TabStop = false;
+            lblFoodPrice.AutoSize = true;
+            lblFoodPrice.BackColor = Color.Transparent;
+            lblFoodPrice.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lblFoodPrice.ForeColor = Color.FromArgb(255, 128, 0);
+            lblFoodPrice.Location = new Point(371, 27);
+            lblFoodPrice.Name = "lblFoodPrice";
+            lblFoodPrice.Size = new Size(119, 31);
+            lblFoodPrice.TabIndex = 7;
+            lblFoodPrice.Text = "100,000 đ";
             // 
             // ucFoodBasket
             // 
@@ -256,12 +259,12 @@
             BackColor = Color.White;
             Controls.Add(guna2Panel1);
             Name = "ucFoodBasket";
-            Size = new Size(519, 118);
+            Size = new Size(546, 118);
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
-            guna2Panel3.ResumeLayout(false);
+            panelCount.ResumeLayout(false);
             guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picFood).EndInit();
             ResumeLayout(false);
         }
 
@@ -269,15 +272,15 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnRemove;
-        private Label txtFoodName;
+        private Label lblFoodName;
         private Label lblFoodSize;
-        private Label label1;
-        private Label txtPrice;
+        private Label lblNumberX;
+        private Label lblFoodPrice;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnPlusNumber;
         private Guna.UI2.WinForms.Guna2Button btnMinusNumber;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel panelCount;
         private Label lblNumber;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox picFood;
     }
 }

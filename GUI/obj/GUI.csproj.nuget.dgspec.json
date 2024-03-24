@@ -269,13 +269,21 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Guna.Charts.WinForms": {
+              "target": "Package",
+              "version": "[1.0.9, )"
+            },
             "Guna.UI2.WinForms": {
               "target": "Package",
               "version": "[2.0.4.6, )"
             },
-            "Microsoft.Extensions.DependencyInjection": {
+            "LiveCharts.WinForms.NetCore3": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[0.9.8, )"
+            },
+            "Syncfusion.Chart.Windows": {
+              "target": "Package",
+              "version": "[25.1.35, )"
             }
           },
           "imports": [

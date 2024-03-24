@@ -5,21 +5,19 @@ namespace GUI.ViewForm
 {
     public partial class frmChangingPassword : Form
     {
+        private bool checkNewPassword = false; // Kiểm tra mật khẩu mới hợp lệ
 
-        // Đặt cờ hiệu để kiểm tra điều kiện đổi mật khẩu
-        private bool checkNewPassword = false;
-        private bool checkConfirmNewPassword = false;
-
-        private Form ActiveForm = null;
+        private bool checkConfirmNewPassword = false; // Kiểm tra mật khẩu xác nhận
 
         private string _email;
+
+        private Form ActiveForm = null;
 
         public frmChangingPassword(string email)
         {
             InitializeComponent();
             _email = email;
 
-            // Thiết lập trạng thái vùng nhập mật khẩu
             txtNewPassword.UseSystemPasswordChar = true;
             txtNewPassword.PasswordChar = '●';
             txtConfirmNewPassword.UseSystemPasswordChar = true;
@@ -81,7 +79,8 @@ namespace GUI.ViewForm
             }
             else if (checkNewPassword)
             {
-                if (AccountBLL.Instance().IsValidConfirmNewPassword(txtNewPassword.Text, txtConfirmNewPassword.Text))
+                if (AccountBLL.Instance().
+                    IsValidConfirmNewPassword(txtNewPassword.Text, txtConfirmNewPassword.Text))
                 {
                     lblConfirmNewPassword.Text = "";
                     picCheckConfirmNewPassword.Image = ResourceImageForVerify.valid;

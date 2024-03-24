@@ -6,12 +6,15 @@ namespace GUI.ViewForm.MainFormApp
 {
     public partial class frmEmployee : Form
     {
-        List<Employee> employeeList;
+        private static List<Employee> employeeList;
+
+        public static FlowLayoutPanel _flpEmployee;
 
         public frmEmployee()
         {
             InitializeComponent();
             LoadEmployees();
+            _flpEmployee = flpanelStaff;
         }
 
         private void btnAddStaff_Click(object sender, EventArgs e)
@@ -21,14 +24,14 @@ namespace GUI.ViewForm.MainFormApp
             LoadEmployees();
         }
 
-        private async void LoadEmployees()
+        public static async void LoadEmployees()
         {
             var data = await Task.Run(() => EmployeeBLL.Instance().SelectAllEmployee());
             employeeList = data.ToList();
-            flpanelStaff.Controls.Clear();
+            _flpEmployee.Controls.Clear();
             foreach (var item in employeeList)
             {
-                flpanelStaff.Controls.Add(new ucEmployee(flpanelStaff, item));
+                _flpEmployee.Controls.Add(new ucEmployee(item));
             }
         }
 
@@ -44,7 +47,7 @@ namespace GUI.ViewForm.MainFormApp
                 flpanelStaff.Controls.Clear();
                 foreach (var item in employeeList)
                 {
-                    flpanelStaff.Controls.Add(new ucEmployee(flpanelStaff, item));
+                    flpanelStaff.Controls.Add(new ucEmployee(item));
                 }
             }
         }

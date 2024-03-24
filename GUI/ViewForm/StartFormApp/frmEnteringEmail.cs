@@ -47,6 +47,7 @@ namespace GUI.ViewForm
             }
         }
 
+        // Phương thức gửi mã OTP
         private void btnSendOTP_Click(object sender, EventArgs e)
         {
             // Kiểm tra email đã đăng kí chưa
@@ -56,7 +57,6 @@ namespace GUI.ViewForm
                     "LỖI", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            // Lấy OTP
             _otp = EmailBLL.Instance().GenerateOTP();
 
             btnSendOTP.Enabled = false;
@@ -66,7 +66,6 @@ namespace GUI.ViewForm
             // Tạo một luồng mới để gửi OTP tránh xung đột luồng với cpbProgress gây đứng màn hình
             Thread thread = new Thread(() =>
             {
-                // Gửi OTP
                 EmailBLL.Instance()
                .SendEmailOTP(txtSendingEmail.Text.Trim(), _otp);
 

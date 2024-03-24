@@ -5,6 +5,7 @@ namespace GUI.ViewForm.MainFormApp
     public partial class frmFood : Form
     {
         public frmAddNewFood _AddFoodForm {  get; set; }
+
         public frmFood()
         {
             InitializeComponent();
@@ -42,9 +43,6 @@ namespace GUI.ViewForm.MainFormApp
                     int id_food = (int)dgvFood.CurrentRow.Cells["IDFood_col"].Value;
                     FoodBLL.Instance().DeleteFood(id_food);
                     LoadFoods();
-                    MessageBox.Show("Xóa danh mục thành công", "THÔNG BÁO",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
             }
         }
@@ -58,7 +56,7 @@ namespace GUI.ViewForm.MainFormApp
             else
             {
                 dgvFood.DataSource = FoodBLL.Instance().
-                    SearchingFood(txtSearch.Text.Trim());
+                    SearchingFoodOnDataGridView(txtSearch.Text.Trim());
             }
         }
     }

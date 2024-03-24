@@ -13,13 +13,11 @@ namespace GUI.ViewForm.MainFormApp
         public frmSetting(UserAccount account)
         {
             InitializeComponent();
-
             _account = account;
             InitializeNavigationControl();
             btnOpenChangePassword.Checked = true;
         }
 
-        #region Các phương thức hỗ trợ
         // Khởi tạo danh sách UserControl và thêm vào panel
         private void InitializeNavigationControl()
         {
@@ -29,11 +27,9 @@ namespace GUI.ViewForm.MainFormApp
                 new ucDeviceLoginSetting(_account)
             };
             navigationControls = new NavigationControls(list, panelSetting);
-            navigationControls.Display(0);
+            navigationControls.Display(0); 
         }
-        #endregion
 
-        #region Sự kiện người dùng trên Form
         private void btnOpenSecurity_Click(object sender, EventArgs e)
         {
             navigationControls.Display(0);
@@ -43,6 +39,5 @@ namespace GUI.ViewForm.MainFormApp
         {
             navigationControls.Display(1);
         }
-        #endregion
     }
 }

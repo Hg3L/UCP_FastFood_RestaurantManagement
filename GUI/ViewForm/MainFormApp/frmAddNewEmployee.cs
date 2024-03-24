@@ -8,7 +8,6 @@ namespace GUI.ViewForm
     {
         private Employee _employee;
 
-        // Phương thức khởi tạo khi cần thêm nhân viên mới
         public frmAddNewEmployee()
         {
             InitializeComponent();
@@ -16,8 +15,7 @@ namespace GUI.ViewForm
             _employee.Id_Account = -1; // Đánh dấu nhân viên chưa được thêm
         }
 
-        // Phương thức khởi tạo khi cần sửa thông tin nhân viên
-        public frmAddNewEmployee(ref Employee employee)
+        public frmAddNewEmployee(Employee employee)
         {
             InitializeComponent();
             _employee = employee;

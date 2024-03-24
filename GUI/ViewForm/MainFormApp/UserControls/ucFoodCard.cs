@@ -4,6 +4,7 @@ namespace GUI.ViewForm.MainFormApp.UserControls
     public partial class ucFoodCard : UserControl
     {
         private Food _food;
+
         private Dictionary<string, decimal> _foodSizeList = new Dictionary<string, decimal>();
 
         public ucFoodCard(Food food)
@@ -24,18 +25,25 @@ namespace GUI.ViewForm.MainFormApp.UserControls
             }
             // Mặc định sẽ chọn kích thước đầu tiên
             cboFoodSize.Text = cboFoodSize.Items[0].ToString();
-            txtPrice.Text = _foodSizeList[cboFoodSize.Items[0].ToString()].ToString("#,##0 đ");
+            lblFoodPrice.Text = _foodSizeList[cboFoodSize.Items[0].ToString()].ToString("#,##0 đ");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ucFoodBasket ucFoodBasket = new ucFoodBasket();
+            ucFoodBasket.foodName = txtFoodName.Text;
+            ucFoodBasket.FoodSize = cboFoodSize.Text;
+            ucFoodBasket.imageLocation = picFoodImage.ImageLocation;
+            ucFoodBasket.foodPrice = lblFoodPrice.Text;
+            ucFoodBasket.foodCount = "1";
+            frmSelling.foodBasketList.Add(ucFoodBasket);
             frmSelling._flpBasket.Controls.Add(ucFoodBasket);
+            frmSelling.CalculatePrice();
         }
 
         private void cboFoodSize_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtPrice.Text = _foodSizeList[cboFoodSize.Text].ToString("#,##0 đ");
+            lblFoodPrice.Text = _foodSizeList[cboFoodSize.Text].ToString("#,##0 đ");
         }
     }
 }

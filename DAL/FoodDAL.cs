@@ -23,12 +23,10 @@ namespace DAL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new FoodDAL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 
@@ -66,6 +64,17 @@ namespace DAL
                         FoodSize = p.Size_Name,
                         FoodPrice = p.Price_Size
                     }).ToList();
+            }
+        }
+
+        public dynamic GetFoodListByCategory(int id)
+        {
+            using (var context = new DatabaseContext())
+            {
+                return context.Food.
+                    Include(p => p.Category).
+                    Include(p => p.FoodSizes).
+                    Where(p => p.Id_Category == id).ToList();
             }
         }
 
@@ -113,7 +122,6 @@ namespace DAL
         {
             using (var context = new DatabaseContext())
             {
-                // Xóa kích cỡ món tại bảng FoodSize
                 var model = context.FoodSize.
                     Where(p => p.Id_Size == id).FirstOrDefault();
                 context.Remove(model);
@@ -208,6 +216,26 @@ namespace DAL
                        Type_Food = p.Category.Name_Category
                    }).ToList();
                 }
+            }
+        }
+
+        public List<Food> SearchingByName(string search)
+        {
+            using (var context = new DatabaseContext())
+            {
+                return context.Food.
+                    Include(p => p.FoodSizes).
+                    Where(p => p.Name_Food.Contains(search)).ToList();
+            }
+        }
+
+        public int GetIdByNameFood(string name)
+        {
+            using (var context = new DatabaseContext())
+            {
+                var model = context.Food.
+                    Where(p => p.Name_Food == name).FirstOrDefault();
+                return model.Id_Food;
             }
         }
     }

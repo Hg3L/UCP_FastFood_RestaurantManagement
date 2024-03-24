@@ -24,12 +24,10 @@ namespace BLL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new FoodBLL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 
@@ -46,6 +44,11 @@ namespace BLL
         public dynamic SelectFoodSizeByID(int id)
         {
             return FoodDAL.Instance().GetFoodSizeListByID(id);
+        }
+
+        public List<Food> SelectFoodListByCategory(int id)
+        {
+            return FoodDAL.Instance().GetFoodListByCategory(id);
         }
 
         public Food? AddingFood(string nameFood, string categoryName, string imageLocation)
@@ -194,9 +197,19 @@ namespace BLL
             return true;
         }
 
-        public dynamic SearchingFood(string search)
+        public dynamic SearchingFoodOnDataGridView(string search)
         {
             return FoodDAL.Instance().SearchingByCondition(search);
+        }
+
+        public List<Food> SearchingFoodOnFlowLayoutPanel(string search)
+        {
+            return FoodDAL.Instance().SearchingByName(search);
+        }
+
+        public int SelectIdByNameFood(string name)
+        {
+            return FoodDAL.Instance().GetIdByNameFood(name);
         }
     }
 }

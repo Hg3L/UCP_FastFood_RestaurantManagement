@@ -39,7 +39,7 @@
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             picFoodImage = new Guna.UI2.WinForms.Guna2PictureBox();
             cboFoodSize = new Guna.UI2.WinForms.Guna2ComboBox();
-            txtPrice = new Label();
+            lblFoodPrice = new Label();
             txtFoodName = new Label();
             btnAdd = new Guna.UI2.WinForms.Guna2ImageButton();
             guna2Panel1.SuspendLayout();
@@ -54,7 +54,7 @@
             guna2Panel1.BorderThickness = 2;
             guna2Panel1.Controls.Add(picFoodImage);
             guna2Panel1.Controls.Add(cboFoodSize);
-            guna2Panel1.Controls.Add(txtPrice);
+            guna2Panel1.Controls.Add(lblFoodPrice);
             guna2Panel1.Controls.Add(txtFoodName);
             guna2Panel1.Controls.Add(btnAdd);
             guna2Panel1.CustomizableEdges = customizableEdges6;
@@ -86,6 +86,7 @@
             // 
             cboFoodSize.BackColor = Color.Transparent;
             cboFoodSize.BorderColor = Color.FromArgb(248, 101, 92);
+            cboFoodSize.Cursor = Cursors.Hand;
             cboFoodSize.CustomizableEdges = customizableEdges3;
             cboFoodSize.DrawMode = DrawMode.OwnerDrawFixed;
             cboFoodSize.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -102,16 +103,16 @@
             cboFoodSize.TabIndex = 5;
             cboFoodSize.SelectedIndexChanged += cboFoodSize_SelectedIndexChanged;
             // 
-            // txtPrice
+            // lblFoodPrice
             // 
-            txtPrice.AutoSize = true;
-            txtPrice.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtPrice.ForeColor = Color.FromArgb(248, 101, 92);
-            txtPrice.Location = new Point(15, 274);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(150, 38);
-            txtPrice.TabIndex = 4;
-            txtPrice.Text = "100,000 Đ";
+            lblFoodPrice.AutoSize = true;
+            lblFoodPrice.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFoodPrice.ForeColor = Color.FromArgb(248, 101, 92);
+            lblFoodPrice.Location = new Point(15, 274);
+            lblFoodPrice.Name = "lblFoodPrice";
+            lblFoodPrice.Size = new Size(150, 38);
+            lblFoodPrice.TabIndex = 4;
+            lblFoodPrice.Text = "100,000 Đ";
             // 
             // txtFoodName
             // 
@@ -160,7 +161,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ImageButton btnAdd;
-        private Label txtPrice;
+        private Label lblFoodPrice;
         private Label txtFoodName;
         private Guna.UI2.WinForms.Guna2ComboBox cboFoodSize;
         private Guna.UI2.WinForms.Guna2PictureBox picFoodImage;

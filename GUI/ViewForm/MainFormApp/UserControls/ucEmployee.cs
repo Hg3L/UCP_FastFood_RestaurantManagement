@@ -7,12 +7,9 @@ namespace GUI.ViewForm.MainFormApp.UserControls
     {
         private Employee _employee;
 
-        private FlowLayoutPanel _flEmployee;
-
-        public ucEmployee(FlowLayoutPanel flEmployee, Employee employee)
+        public ucEmployee(Employee employee)
         {
             InitializeComponent();
-            _flEmployee = flEmployee;
             _employee = employee;
             InitializeDataEmployee();
         }
@@ -30,7 +27,7 @@ namespace GUI.ViewForm.MainFormApp.UserControls
             if (result == DialogResult.Yes)
             {
                 EmployeeBLL.Instance().DeleteEmployee(_employee);
-                _flEmployee.Controls.Remove(this);
+                frmEmployee._flpEmployee.Controls.Remove(this);
                 MessageBox.Show("Xóa nhân viên thành công", "THÔNG BÁO",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -38,9 +35,9 @@ namespace GUI.ViewForm.MainFormApp.UserControls
 
         private void btnEditEmployee_Click(object sender, EventArgs e)
         {
-            frmAddNewEmployee form = new frmAddNewEmployee(ref _employee);
+            frmAddNewEmployee form = new frmAddNewEmployee(_employee);
             form.ShowDialog();
-            InitializeDataEmployee();
+            frmEmployee.LoadEmployees();
         }
     }
 }

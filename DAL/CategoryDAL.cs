@@ -1,10 +1,5 @@
 ﻿using DAL.Context;
 using DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -27,12 +22,10 @@ namespace DAL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new CategoryDAL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 

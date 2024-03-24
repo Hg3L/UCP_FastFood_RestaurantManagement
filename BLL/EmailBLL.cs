@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
+﻿using System.Net.Mail;
 using System.Net;
-using System.Threading.Tasks;
 using BLL.Helpers;
 using DAL;
 
@@ -28,12 +24,10 @@ namespace BLL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new EmailBLL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 
@@ -85,7 +79,6 @@ namespace BLL
             }
         }
 
-        // Phương thức kiểm tra email nhận mã OTP
         public bool IsValidAndExistentEmail(string email)
         {
             if(string.IsNullOrWhiteSpace(email) || !IsValidEmail(email))

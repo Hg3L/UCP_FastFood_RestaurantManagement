@@ -13,7 +13,6 @@ namespace GUI.ViewForm.MainFormApp.UserControls
 
             _account = account;
 
-            // Thiết lập trạng thái vùng nhập mật khẩu
             txtNewPassword.UseSystemPasswordChar = true;
             txtNewPassword.PasswordChar = '●';
         }

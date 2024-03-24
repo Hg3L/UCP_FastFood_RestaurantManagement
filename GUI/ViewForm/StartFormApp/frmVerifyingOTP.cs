@@ -9,8 +9,7 @@ namespace GUI.ViewForm
 
         private int _otp;
 
-        // chỉ số % của progress bar
-        int index = 1;
+        int index = 1; // chỉ số % của progress bar
 
         private Form ActiveForm = null;
 

@@ -40,6 +40,17 @@
           }
         }
       },
+      "Guna.Charts.WinForms/1.0.9": {
+        "dependencies": {
+          "System.Management": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0-windows7.0/Guna.Charts.WinForms.dll": {
+            "assemblyVersion": "1.0.9.0",
+            "fileVersion": "1.0.9.0"
+          }
+        }
+      },
       "Guna.UI2.WinForms/2.0.4.6": {
         "dependencies": {
           "System.Management": "7.0.0"
@@ -48,6 +59,25 @@
           "lib/net7.0-windows7.0/Guna.UI2.dll": {
             "assemblyVersion": "2.0.4.6",
             "fileVersion": "2.0.4.6"
+          }
+        }
+      },
+      "LiveCharts.WinForms.NetCore3/0.9.8": {
+        "dependencies": {
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/LiveCharts.WinForms.dll": {
+            "assemblyVersion": "0.9.8.0",
+            "fileVersion": "0.9.8.0"
+          },
+          "lib/net8.0-windows7.0/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.8.0",
+            "fileVersion": "0.9.8.0"
+          },
+          "lib/net8.0-windows7.0/LiveCharts.dll": {
+            "assemblyVersion": "0.9.8.0",
+            "fileVersion": "0.9.8.0"
           }
         }
       },
@@ -447,6 +477,63 @@
           }
         }
       },
+      "Syncfusion.Chart.Base/25.1.35": {
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.35",
+          "Syncfusion.Shared.Base": "25.1.35"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Chart.Base.dll": {
+            "assemblyVersion": "25.1.35.0",
+            "fileVersion": "25.1.35.0"
+          }
+        }
+      },
+      "Syncfusion.Chart.Windows/25.1.35": {
+        "dependencies": {
+          "Syncfusion.Chart.Base": "25.1.35",
+          "Syncfusion.Grouping.Base": "25.1.35",
+          "Syncfusion.Licensing": "25.1.35",
+          "Syncfusion.Shared.Base": "25.1.35"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Chart.Windows.dll": {
+            "assemblyVersion": "25.1.35.0",
+            "fileVersion": "25.1.35.0"
+          }
+        }
+      },
+      "Syncfusion.Grouping.Base/25.1.35": {
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.35",
+          "Syncfusion.Shared.Base": "25.1.35"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Grouping.Base.dll": {
+            "assemblyVersion": "25.1.35.0",
+            "fileVersion": "25.1.35.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/25.1.35": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "25.1.35.0",
+            "fileVersion": "25.1.35.0"
+          }
+        }
+      },
+      "Syncfusion.Shared.Base/25.1.35": {
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.35"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.Base.dll": {
+            "assemblyVersion": "25.1.35.0",
+            "fileVersion": "25.1.35.0"
+          }
+        }
+      },
       "System.CodeDom/7.0.0": {
         "runtime": {
           "lib/net7.0/System.CodeDom.dll": {
@@ -464,6 +551,14 @@
           "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.922.41905"
+          }
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -784,12 +879,26 @@
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
     },
+    "Guna.Charts.WinForms/1.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AT6CUHGi+3fh7ut9tKIW6UB8lwFbpqCibjm4ya5qxLvwQPNjKHr1gSeStf4r+B+asekyiuu8ZCKCVlVugL+lVg==",
+      "path": "guna.charts.winforms/1.0.9",
+      "hashPath": "guna.charts.winforms.1.0.9.nupkg.sha512"
+    },
     "Guna.UI2.WinForms/2.0.4.6": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-NYzSJp7e47Cz3NgGCHvzadash8ycmxxUnpLg4Rr/MSYG9WDw0HOoTI4SkbDW+HbACrf6tsWYCuzWkgvjuM/O6w==",
       "path": "guna.ui2.winforms/2.0.4.6",
       "hashPath": "guna.ui2.winforms.2.0.4.6.nupkg.sha512"
+    },
+    "LiveCharts.WinForms.NetCore3/0.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pIiJErHE6mxIktJiLBKAmEoas8dOmEtodJQZ0o0KUnelTYfQJJqgUB2kR5476x33TM19yvC9rUjnei3US61Jbg==",
+      "path": "livecharts.winforms.netcore3/0.9.8",
+      "hashPath": "livecharts.winforms.netcore3.0.9.8.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -1015,6 +1124,41 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "Syncfusion.Chart.Base/25.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yYHtZVlGASjpGuXYpD3/zDD+ux2izhONn9rKDzGw9CL76gdSvXDfl9SFBXps0iQJnCNe3dedcQNi8/l0f3GA7w==",
+      "path": "syncfusion.chart.base/25.1.35",
+      "hashPath": "syncfusion.chart.base.25.1.35.nupkg.sha512"
+    },
+    "Syncfusion.Chart.Windows/25.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y0doNNP5DPdNhwMoVrvcTATAnuzL0w23yue31QYTelxHTy4HvcMRYfqWDzD2Z1IpzlvWB5ChDQGZKj8k3CLCtA==",
+      "path": "syncfusion.chart.windows/25.1.35",
+      "hashPath": "syncfusion.chart.windows.25.1.35.nupkg.sha512"
+    },
+    "Syncfusion.Grouping.Base/25.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PvsarsHhq3cbS/kPSoRfrEfw6wKYIP6Wyf3K9PEgezzb8AtTOlE46FR1hCjS6PAw0nSFjWmwrZ7fQGPotrmpgQ==",
+      "path": "syncfusion.grouping.base/25.1.35",
+      "hashPath": "syncfusion.grouping.base.25.1.35.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/25.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZuMlu1xypHNxPM/UsPn1hEOOme30JgIQ9GzyF0yn/89mE6/g2ERkO+guhxnQXekEXTzVpYXkWnSshn1WV1l+rA==",
+      "path": "syncfusion.licensing/25.1.35",
+      "hashPath": "syncfusion.licensing.25.1.35.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Base/25.1.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DEaSrzoTvuml5iLwMek0YXYM1Kip0RW+4gxA997xtJqLh9hagxw30ABTxu2oxPNiGbbDt4Vjmjf/Mlc6IquSTg==",
+      "path": "syncfusion.shared.base/25.1.35",
+      "hashPath": "syncfusion.shared.base.25.1.35.nupkg.sha512"
+    },
     "System.CodeDom/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1028,6 +1172,13 @@
       "sha512": "sha512-jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w==",
       "path": "system.configuration.configurationmanager/6.0.1",
       "hashPath": "system.configuration.configurationmanager.6.0.1.nupkg.sha512"
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "path": "system.data.datasetextensions/4.5.0",
+      "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/6.0.1": {
       "type": "package",

@@ -15,8 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Guna.Charts.WinForms" Version="1.0.9" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="LiveCharts.WinForms.NetCore3" Version="0.9.8" />
+    <PackageReference Include="Syncfusion.Chart.Windows" Version="25.1.35" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +31,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ViewForm\MainFormApp\ResourceImageArrow.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceImageArrow.resx</DependentUpon>
     </Compile>
     <Compile Update="ViewForm\MainFormApp\ResourceImageFunction.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -51,6 +58,10 @@
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewForm\MainFormApp\ResourceImageArrow.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceImageArrow.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewForm\MainFormApp\ResourceImageFunction.resx">
       <Generator>ResXFileCodeGenerator</Generator>

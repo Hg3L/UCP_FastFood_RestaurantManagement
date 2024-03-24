@@ -17,6 +17,8 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSyncfusion_Shared_Base Condition=" '$(PkgSyncfusion_Shared_Base)' == '' ">C:\Users\LAMDHG\.nuget\packages\syncfusion.shared.base\25.1.35</PkgSyncfusion_Shared_Base>
+    <PkgSyncfusion_Chart_Windows Condition=" '$(PkgSyncfusion_Chart_Windows)' == '' ">C:\Users\LAMDHG\.nuget\packages\syncfusion.chart.windows\25.1.35</PkgSyncfusion_Chart_Windows>
     <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\LAMDHG\.nuget\packages\microsoft.web.webview2\1.0.864.35</PkgMicrosoft_Web_WebView2>
   </PropertyGroup>
 </Project>

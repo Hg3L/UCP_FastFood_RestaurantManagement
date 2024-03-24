@@ -1,6 +1,5 @@
 ﻿using DAL.Context;
 using DTO;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DAL
 {
@@ -23,12 +22,10 @@ namespace DAL
                     // Kiểm tra lại sau khi đồng bộ hóa để tránh tạo thể hiện trùng lặp
                     if (_instance == null)
                     {
-                        // Tạo một thể hiện mới của lớp SendingEmailOTP
                         _instance = new AccountDAL();
                     }
                 }
             }
-            // Trả về thể hiện duy nhất của lớp
             return _instance;
         }
 
